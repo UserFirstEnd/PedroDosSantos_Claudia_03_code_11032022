@@ -1,0 +1,8 @@
+.filter {
+    @extend %center-flex-center;
+    &__search {
+        outline: none;
+        border: none;
+        font-size: 15px;
+    }
+}
