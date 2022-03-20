@@ -1,16 +1,32 @@
-$font: 'Roboto', sans-serif;
+$font: (
+    principal:'Roboto' sans-serif,
+);
 
-$colors: (
+$color: (
     primary: #9356DC,
     secondary: #FF79DA,
     tertiary: #99E2D0,
-    default: grey,
+    default: rgb(233, 232, 232),
+    medium-default: rgb(151, 150, 150),
+    min-default: rgb(245, 245, 245),
 );
 
 $sizes: (
     small: 15px,
+);
+
+$margin: (
+    first: 0,
+    second: 5px,
+    bottom-first: 25px,
+    bottom-second: 40px,
+);
+
+$padding: (
+    first: 10px,
+    second: 15px,
+    thirt: 20px,
+    forth: 0 20px,
 )
-
-
 
   

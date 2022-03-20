@@ -1,0 +1,8 @@
+.button {
+    background-color: map-get($color, secondary);
+    border: none;
+    border-radius: 30px;
+    padding: map-get($padding, second);
+    color: white;
+    font-weight: bold;
+}

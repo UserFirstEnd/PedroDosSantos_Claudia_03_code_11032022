@@ -1,0 +1,137 @@
+.header, .filter {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.fonction__choice, .filter__localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+footer {
+  padding: 20px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.button {
+  background-color: #FF79DA;
+  border: none;
+  border-radius: 30px;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.header {
+  padding: 15px;
+}
+
+.fonction {
+  padding: 0 20px;
+}
+
+.fonction__choice {
+  background-color: whitesmoke;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: none;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.fonction__choice p {
+  padding-left: 30px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.fonction__choice i {
+  font-size: 18px;
+  color: #979696;
+}
+
+.filter {
+  background-color: whitesmoke;
+  margin-bottom: 40px;
+}
+
+.filter__localisation {
+  background-color: #e9e8e8;
+  padding: 10px;
+  -webkit-box-shadow: inset 0 5px 5px -5px;
+          box-shadow: inset 0 5px 5px -5px;
+}
+
+.filter__search {
+  background-color: #e9e8e8;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  width: 130px;
+  padding: 10px;
+}
+
+.restaurants {
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.restaurants__cards {
+  background-color: white;
+  height: 220px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.restaurants__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.restaurants__description {
+  padding: 10px;
+}
+
+.restaurants__description p, .restaurants__description h4 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+/*# sourceMappingURL=main.css.map */

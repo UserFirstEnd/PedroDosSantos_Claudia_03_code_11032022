@@ -1,3 +1,6 @@
 .header {
-  @extend %center-flex-center;
+    @extend %center-flex-center;
+    padding: map-get($padding, second);
 }
+
+
