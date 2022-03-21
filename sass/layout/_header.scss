@@ -1,4 +1,6 @@
 .header {
+    display: flex;
+    align-items: center;
     @extend %center-flex-center;
     padding: map-get($padding, second);
 }

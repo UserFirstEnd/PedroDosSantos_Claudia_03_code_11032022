@@ -1,0 +1,94 @@
+.filter {
+    @extend %center-flex-center;
+    background-color: map-get($color, min-default);
+    margin-bottom: map-get($margin, bottom-second);
+    &__localisation {
+        @extend %center;
+        background-color: map-get($color, default);
+        padding: map-get($padding, first);
+        box-shadow: inset 0 5px 5px -5px;
+    }
+    &__search {
+        background-color: map-get($color, default);
+        outline: none;
+        border: none;
+        font-size: 14px;
+        width: 130px;
+        padding: 10px;
+    }
+}
+
+.fonction {
+    padding: map-get($padding, forth);
+    margin-bottom: map-get($margin, thirt);
+    &__choice {
+        @extend %center;
+        background-color: map-get($color, min-default);
+        padding: map-get($padding, second);
+        margin-bottom: map-get($margin, bottom-first);
+        border: none;
+        width: 100%;
+        border-radius: 30px;
+        p {
+            padding-left: 30px;
+            font-size: medium;
+            font-weight: bold;
+        }
+        i {
+            font-size: 18px;
+            color: map-get($color, medium-default);
+        }
+    }
+}
+
+.restaurants {
+    background-color: map-get($color, min-default);
+    padding: map-get($padding, thirt);
+    margin-bottom: map-get($margin, bottom-second);
+    &__cards {
+        background-color: white;
+        height: 220px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    &__img {
+        object-fit: cover;
+        background-position: center;
+        width: 100%;
+        height: 150px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    &__description {
+        padding: map-get($padding, first);
+        p, h4 {
+            margin: map-get($margin, first);
+            margin-bottom: map-get($margin, second);
+        }
+    }
+}
+
+.dish {
+    &__img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+.composition {
+    background-color: map-get($color, min-default);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 20px;
+    margin-top: -50px;
+    position: relative;
+    &__title {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__choice {
+        margin-bottom: 40px;
+    }
+}

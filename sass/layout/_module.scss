@@ -1,0 +1,22 @@
+.dish-choice {
+    width: 100%;
+    border: none;
+    background-color: white;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: map-get($padding, first);
+    h2 {
+        margin: map-get($margin, first);
+        margin-bottom: map-get($margin, second);
+        font-size:large;
+    
+    }
+    p {
+        align-self: flex-end;
+        margin: map-get($margin, first);
+        margin-bottom: map-get($margin, second);
+    }
+}

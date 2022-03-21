@@ -16,6 +16,10 @@ a {
     display: block;
 }
 
-footer {
-    padding: map-get($padding, thirt);
+ol, ul {
+    padding: 0;
+}
+
+label {
+    border-bottom: solid 3px map-get($color, tertiary);
 }
