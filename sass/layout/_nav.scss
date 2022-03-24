@@ -1,0 +1,19 @@
+.filter {
+    @extend %center-flex-center;
+    background-color: map-get($color, min-default);
+    margin-bottom: map-get($margin, bottom-second);
+    &__localisation {
+        @extend %center;
+        background-color: map-get($color, default);
+        padding: map-get($padding, first);
+        box-shadow: inset 0 5px 5px -5px;
+    }
+    &__search {
+        background-color: map-get($color, default);
+        outline: none;
+        border: none;
+        font-size: 14px;
+        width: 130px;
+        padding: 10px;
+    }
+}
