@@ -8,11 +8,11 @@
     border-radius: 15px;
     margin-top: 15px;
     padding: map-get($padding, first);
+    box-shadow: 0 3px map-get($color, default);
     h2 {
         margin: map-get($margin, first);
         margin-bottom: map-get($margin, second);
         font-size:large;
-    
     }
     p {
         align-self: flex-end;

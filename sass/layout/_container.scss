@@ -1,15 +1,23 @@
 .fonction {
     padding: map-get($padding, forth);
     margin-bottom: map-get($margin, thirt);
+    @media screen and (min-width: 992px) {
+        padding: 0 40px;
+        &__title {
+            width: 100%;
+        }
+    }
     &__choice {
         @extend %center;
         background-color: map-get($color, min-default);
         padding: map-get($padding, second);
         margin-bottom: map-get($margin, bottom-first);
         border: none;
-        width: 100%;
         border-radius: 30px;
         position: relative;
+        @media screen and (min-width: 992px) {
+            width: 30%;
+        }
         p {
             padding-left: 30px;
             font-size: medium;
@@ -22,13 +30,10 @@
         span {
             position: absolute;
             color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             font-size: 17px;
             left: -10px;
             top: 33%;
-            background-color: map-get($color , primary );
+            background-color: map-get($color, primary);
             border-radius: 50%;
             width: 27px;
             height: 27px;
@@ -39,13 +44,21 @@
 .restaurants {
     background-color: map-get($color, min-default);
     padding: map-get($padding, thirt);
-    margin-bottom: map-get($margin, bottom-second);
+    @media screen and (min-width: 992px) {
+        padding: 0 40px;
+        &__title {
+            width: 100%;
+        }
+    }
     &__cards {
         background-color: white;
         height: 220px;
         margin-bottom: 30px;
         border-radius: 15px;
         cursor: pointer;
+        @media screen and (min-width: 992px) {
+            width: 48%;
+        }
     }
     &__img {
         object-fit: cover;
@@ -55,12 +68,32 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
-    &__description {
+    &__description p,
+    h4 {
+        margin: map-get($margin, first);
+        margin-bottom: map-get($margin, second);
+        text-align: left;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
         padding: map-get($padding, first);
-        p,
-        h4 {
-            margin: map-get($margin, first);
-            margin-bottom: map-get($margin, second);
+        i {
+            position: absolute;
+            right: 55px;
+            font-size: 25px;
+        }
+        .fas {
+            color: transparent;
+            background-image: linear-gradient(165deg, map-get($color, primary) 0%, map-get($color, secondary) 90%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            &:hover {
+                opacity: 1;
+                transition: all 3s ease-in-out;
+                transform: scale(1.1);
+            }
         }
     }
 }
@@ -84,12 +117,26 @@
         display: flex;
         justify-content: space-between;
         font-family: "Shrikhand", sans-serif;
+        @media screen and (min-width: 992px) {
+            width: 100%;
+        }
     }
     &__choice {
         margin-bottom: 40px;
+        @media screen and (min-width: 992px) {
+            width: 32%;
+        }
+    }
+    ul:nth-child(2) {
+        animation-name: dish;
+        animation-duration: 0.5s;
+    }
+    ul:nth-child(3) {
+        animation-name: dish;
+        animation-duration: 1s;
+    }
+    ul:nth-child(4) {
+        animation-name: dish;
+        animation-duration: 1.5s;
     }
 }
-
-
-
-
