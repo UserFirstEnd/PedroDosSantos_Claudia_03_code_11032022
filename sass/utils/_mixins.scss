@@ -1,0 +1,9 @@
+@mixin for-queries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin default-box-shadow {
+    box-shadow: 3px 3px 3px 3px map-get($color, max-default);
+}

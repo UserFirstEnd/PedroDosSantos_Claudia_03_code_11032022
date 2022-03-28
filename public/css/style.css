@@ -9,6 +9,12 @@
   justify-content: center;
 }
 
+.fonction__choice span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes dish {
   0% {
     transform: translateY(-10%);
@@ -50,13 +56,26 @@ body {
 }
 
 .button {
-  background-color: #FF79DA;
+  background: linear-gradient(165deg, #9356DC 0%, #FF79DA 90%);
   border: none;
   border-radius: 30px;
   padding: 15px;
   color: white;
   font-weight: bold;
   width: 200px;
+  cursor: pointer;
+  box-shadow: 3px 3px 3px 3px #ebe9e9;
+}
+.button:hover {
+  background: linear-gradient(170deg, #9356DC 5%, #FF79DA 60%);
+  box-shadow: 3px 3px 3px 3px #e9e8e8;
+}
+.button--top {
+  margin-bottom: 55px;
+  margin-top: 15px;
+}
+.button--bottom {
+  margin-bottom: 55px;
 }
 
 .header {
@@ -89,6 +108,9 @@ body {
 @media screen and (min-width: 992px) {
   .fonction {
     padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .fonction__title {
     width: 100%;
@@ -101,6 +123,7 @@ body {
   border: none;
   border-radius: 30px;
   position: relative;
+  box-shadow: 3px 3px 3px 3px #ebe9e9;
 }
 @media screen and (min-width: 992px) {
   .fonction__choice {
@@ -135,6 +158,9 @@ body {
 @media screen and (min-width: 992px) {
   .restaurants {
     padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .restaurants__title {
     width: 100%;
@@ -146,6 +172,7 @@ body {
   margin-bottom: 30px;
   border-radius: 15px;
   cursor: pointer;
+  box-shadow: 3px 3px 3px 3px #ebe9e9;
 }
 @media screen and (min-width: 992px) {
   .restaurants__cards {
@@ -182,10 +209,11 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+  cursor: pointer;
 }
 .restaurants__flex .fas:hover {
   opacity: 1;
-  transition: all 3s ease-in-out;
+  transition: all 2s ease-in-out;
   transform: scale(1.1);
 }
 
@@ -202,6 +230,13 @@ body {
   padding: 20px;
   margin-top: -50px;
   position: relative;
+}
+@media screen and (min-width: 992px) {
+  .composition {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 .composition__title {
   display: flex;
