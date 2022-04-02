@@ -9,10 +9,17 @@
   }
 }
 
-@keyframes full-heart {
-     
-     
-  50%  {background: linear-gradient(165deg, map-get($color, primary) 0%, map-get($color, secondary) 90%); bottom: 0px; top: 200px;}
-  75%  {background: linear-gradient(165deg, map-get($color, primary) 0%, map-get($color, secondary) 90%); bottom: 150px; top: 200px;}
-  100% {background: linear-gradient(165deg, map-get($color, primary) 0%, map-get($color, secondary) 90%); bottom: 200px; top: 0px;}
+@keyframes heart {
+  90% {
+    clip-path: circle(85% at 50% 100%);
   }
+  100% {
+    clip-path: initial;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform:rotate(360deg);
+  }
+}

@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-.fonction__choice span {
+.dish-choice__check, .fonction__choice span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,21 +25,17 @@
     opacity: 1;
   }
 }
-@keyframes full-heart {
-  50% {
-    background: linear-gradient(165deg, #9356DC 0%, #FF79DA 90%);
-    bottom: 0px;
-    top: 200px;
-  }
-  75% {
-    background: linear-gradient(165deg, #9356DC 0%, #FF79DA 90%);
-    bottom: 150px;
-    top: 200px;
+@keyframes heart {
+  90% {
+    clip-path: circle(85% at 50% 100%);
   }
   100% {
-    background: linear-gradient(165deg, #9356DC 0%, #FF79DA 90%);
-    bottom: 200px;
-    top: 0px;
+    clip-path: initial;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
 }
 * {
@@ -267,6 +263,24 @@ body {
     width: 100%;
   }
 }
+.composition__title i {
+  position: absolute;
+  right: 25px;
+  font-size: 25px;
+}
+.composition__title .fas {
+  color: transparent;
+  background-image: linear-gradient(165deg, #9356DC 0%, #FF79DA 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  cursor: pointer;
+}
+.composition__title .fas:hover {
+  opacity: 1;
+  transform: scaleY(0);
+  transition: 3s ease-in-out;
+}
 .composition__choice {
   margin-bottom: 40px;
 }
@@ -293,22 +307,50 @@ body {
   border: none;
   background-color: white;
   display: flex;
-  text-align: left;
   justify-content: space-between;
   border-radius: 15px;
   margin-top: 15px;
-  padding: 10px;
   box-shadow: 0 3px #e9e8e8;
+  cursor: pointer;
+  overflow: hidden;
 }
-.dish-choice h2 {
+.dish-choice__price {
+  /*----------------------------------------------Revoir*/
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+.dish-choice__text h2 {
   margin: 0;
   margin-bottom: 5px;
   font-size: large;
+  font-weight: 600;
 }
 .dish-choice p {
   align-self: flex-end;
   margin: 0;
-  margin-bottom: 5px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.dish-choice__check {
+  transition: all 1s ease-in-out;
+  width: 60px;
+  background-color: #99E2D0;
+  margin-right: -80px;
+}
+.dish-choice__check i {
+  color: #99E2D0;
+  border-radius: 50%;
+  padding: 4px;
+  background-color: white;
+}
+.dish-choice:hover .dish-choice__check {
+  margin-right: 0;
+}
+.dish-choice:hover i {
+  transform: rotate(360deg);
+  transition: all 1s ease-in-out;
 }
 
 footer {

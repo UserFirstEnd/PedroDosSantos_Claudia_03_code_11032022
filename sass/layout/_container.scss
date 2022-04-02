@@ -128,8 +128,27 @@
         display: flex;
         justify-content: space-between;
         font-family: "Shrikhand", sans-serif;
+        
         @media screen and (min-width: 992px) {
             width: 100%;
+        }
+        i {
+            position: absolute;
+            right: 25px;
+            font-size: 25px;
+        }
+        .fas {
+            color: transparent;
+            background-image: linear-gradient(165deg, map-get($color, primary) 0%, map-get($color, secondary) 90%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 0;
+            cursor: pointer;
+            &:hover {
+                opacity: 1;
+                transform: scaleY(0);
+                transition : 3s ease-in-out;
+            }
         }
     }
     &__choice {
