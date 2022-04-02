@@ -3,6 +3,11 @@
     align-items: center;
     @extend %center-flex-center;
     padding: map-get($padding, second);
+    .fas {
+        position: absolute;
+        left: 20px;
+        top: 25px;
+    }
 }
 
 
