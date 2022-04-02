@@ -54,6 +54,11 @@
     box-shadow: 0 3px map-get($color, default);
     cursor: pointer;
     overflow: hidden;
+    &__title, &__text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     &__price {          /*----------------------------------------------Revoir*/
         display: flex;
         justify-content: space-between;
@@ -61,6 +66,7 @@
         padding: map-get($padding, first);
     }
     &__text {
+  
         h2 {
             margin: map-get($margin, first);
             margin-bottom: map-get($margin, second);
@@ -94,6 +100,11 @@
         i {                  
             transform: rotate(360deg);
             transition: all 1s ease-in-out;
+        }
+        &__text {
+            
+            visibility: hidden;
+            
         }
     }
 }
