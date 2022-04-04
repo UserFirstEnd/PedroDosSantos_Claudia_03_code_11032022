@@ -1,4 +1,12 @@
 footer {
     padding: map-get($padding, thirt);
     background-color: rgb(49, 49, 49);
+    img {
+        color: transparent;
+        background-image: white;
+        background-clip: text;
+    }
+    a {
+        color: white;
+    }
 }
