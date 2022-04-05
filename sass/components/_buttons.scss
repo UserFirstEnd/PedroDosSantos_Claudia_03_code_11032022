@@ -1,19 +1,19 @@
 .button {
-    background: linear-gradient(165deg, map-get($color, primary) 0%, map-get($color, secondary) 90%);
+    background: linear-gradient(180deg, map-get($color, secondary) 0%, map-get($color, primary) 90%);
     border: none;
     border-radius: 30px;
     padding: map-get($padding, second);
     color: white;
-    font-weight: bold;
-    width: 200px;
+    font-size: 13px;
+    width: 180px;
     cursor: pointer;
     @include default-box-shadow;
     &:hover {
-        background: linear-gradient(170deg, map-get($color, primary) 5%, map-get($color, secondary) 60%);
+        background: linear-gradient(180deg, map-get($color, secondary) 0%, map-get($color, primary) 90%);
         box-shadow: 3px 3px 3px 3px map-get($color, default);
     }
     &--top {
-        margin-bottom: 55px;
+        margin-bottom: 30px;
         margin-top: 15px;
     }
     &--bottom {

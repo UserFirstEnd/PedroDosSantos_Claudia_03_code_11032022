@@ -1,5 +1,4 @@
 .filter {
-    @extend %center-flex-center;
     background-color: map-get($color, min-default);
     margin-bottom: map-get($margin, bottom-second);
     &__localisation {
@@ -12,8 +11,23 @@
         background-color: map-get($color, default);
         outline: none;
         border: none;
-        font-size: 14px;
-        width: 130px;
+        font-size: 13px;
+        width: 125px;
         padding: 10px;
+    }
+    .fas {
+        font-size: 14px;
+        color: rgb(72, 71, 71);
+    }
+    &__submit {
+        padding: 20px 20px 20px 25px;
+        @extend %center-flex-center;
+        h1 {
+            font-size: 19px;
+        }
+        p {
+            font-size: 15px;
+            color: rgb(105, 104, 104);
+        }
     }
 }

@@ -3,10 +3,13 @@
     align-items: center;
     @extend %center-flex-center;
     padding: map-get($padding, second);
+    &__logo {
+        width: 135px;
+    }
     .fas {
         position: absolute;
         left: 20px;
-        top: 25px;
+        top: 20px;
     }
 }
 

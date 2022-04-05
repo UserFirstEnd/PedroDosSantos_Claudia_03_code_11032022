@@ -23,6 +23,7 @@ ol, ul {
 label {
     text-transform: uppercase;
     position: relative;
+    font-size: 14px;
     &:after {
         content: '';
         border-bottom:  solid 3px map-get($color, tertiary);
@@ -32,8 +33,4 @@ label {
         left: 0;
         position: absolute;
     }
-}
-
-form {
-    @extend %center-flex-center;
 }

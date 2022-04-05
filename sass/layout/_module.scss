@@ -81,13 +81,14 @@
         justify-content: space-between;
         width: 100%;
         padding: map-get($padding, first);
+        
     }
     &__text {
   
         h2 {
             margin: map-get($margin, first);
             margin-bottom: map-get($margin, second);
-            font-size: large;
+            font-size: 16px;
             font-weight: 600;
         }
     }
@@ -95,14 +96,14 @@
         align-self: flex-end;
         margin: map-get($margin, first);
         margin-right: 10px;
-        font-size: 15px;
+        font-size: 14px;
     }
     &__check {
         @extend %flex-center-center;
         transition: all 1s ease-in-out;
         width: 60px;
         background-color: map-get($color, tertiary);
-        margin-right: -80px;
+        margin-right: -60px;
         i {
             color: map-get($color, tertiary);
             border-radius: 50%;
@@ -118,9 +119,7 @@
             animation: check 1s linear forwards;
         }
         &__text {
-            
-            visibility: hidden;
-            
+             visibility: hidden;
         }
     }
 }
