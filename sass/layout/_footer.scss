@@ -1,17 +1,22 @@
 footer {
     padding: map-get($padding, thirt);
     background-color: rgb(49, 49, 49);
-    font-size: 14px;
+    font-size: 13px;
     a {
         color: white;
-        margin-bottom: 5px;;
+        margin-bottom: 5px;
     }
     i {
-        padding-right: 5px;
-        font-size: 13px;
+        font-size: 12px;
     }
     img {
         height: 16px;
         margin-bottom: 8px;
+    }
+    .fas {
+        width: 23px;
+    }
+    .fa-hands-helping {
+        font-size: 10px;
     }
 }
