@@ -16,7 +16,11 @@
         margin-bottom: 55px;
     }
     &:hover {
-        background: linear-gradient(180deg, map-get($color, secondary) 0%, map-get($color, primary) 60%);
-        box-shadow: 3px 3px 3px 3px map-get($color, default);
+        background: linear-gradient(180deg, map-get($color, secondary) 40%, map-get($color, primary) 90%);
+        box-shadow: 3px 3px 3px 3px map-get($color, medium-default);
     }
+}
+
+.button-flex {
+    @extend %flex-justify-center;
 }
