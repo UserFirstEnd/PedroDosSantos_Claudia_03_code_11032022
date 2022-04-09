@@ -8,15 +8,15 @@
     width: 180px;
     cursor: pointer;
     @include default-box-shadow;
-    &:hover {
-        background: linear-gradient(180deg, map-get($color, secondary) 0%, map-get($color, primary) 90%);
-        box-shadow: 3px 3px 3px 3px map-get($color, default);
-    }
     &--top {
         margin-bottom: 30px;
         margin-top: 15px;
     }
     &--bottom {
         margin-bottom: 55px;
+    }
+    &:hover {
+        background: linear-gradient(180deg, map-get($color, secondary) 0%, map-get($color, primary) 60%);
+        box-shadow: 3px 3px 3px 3px map-get($color, default);
     }
 }

@@ -2,7 +2,7 @@
     height:50px;
     width: 50px;
     position: absolute; 
-    top: 0;
+    top: 110px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -33,7 +33,7 @@
     height:100px;
     width: 100px;
     position: absolute; 
-    top: 0;
+    top: 110px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -71,7 +71,7 @@
     box-shadow: 0 3px map-get($color, default);
     cursor: pointer;
     overflow: hidden;
-    &__title, &__text {
+    &__text {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -83,15 +83,13 @@
         padding: map-get($padding, first);
         
     }
-    &__text {
-  
-        h2 {
-            margin: map-get($margin, first);
-            margin-bottom: map-get($margin, second);
-            font-size: 16px;
-            font-weight: 600;
-        }
+    &__title {
+        margin: map-get($margin, first);
+        margin-bottom: map-get($margin, second);
+        font-size: 16px;
+        font-weight: 600;
     }
+    
     p {
         align-self: flex-end;
         margin: map-get($margin, first);
