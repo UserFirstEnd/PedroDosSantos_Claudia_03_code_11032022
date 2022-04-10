@@ -9,6 +9,15 @@
   }
 }
 
+@keyframes loader {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 0vh;
+  }
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg); 
