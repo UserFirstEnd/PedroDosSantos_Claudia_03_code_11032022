@@ -12,6 +12,7 @@ footer {
     img {
         height: 16px;
         margin-bottom: 8px;
+        filter: invert(100%) sepia(0%) saturate(5%) hue-rotate(161deg) brightness(103%) contrast(102%);
     }
     .fas {
         width: 23px;
