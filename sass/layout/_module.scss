@@ -1,6 +1,13 @@
 .loader {
-    background-color: grey;
+    background-color: rgb(231, 230, 230);
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    opacity: 0.5;
+    z-index: 1;
     animation: loader 4s linear forwards;
+    @extend %flex-center-center;
+
     &__one {
         height:50px;
         width: 50px;
@@ -17,6 +24,7 @@
             border-top-color: map-get($color ,tertiary);
             box-sizing: border-box;
             animation: spin 4s linear forwards;
+            animation-direction: reverse;
        }
         div:nth-child(2) {
             border: 10px solid transparent;
@@ -26,6 +34,7 @@
             height: 100%;
             position: absolute;
             animation: spin-2 4s linear forwards;
+            animation-direction: reverse;
      }
     }
     &__two {
@@ -35,7 +44,6 @@
         inset: 110px 0 0 0;
         margin: auto;
         border-radius: 50%;
-        animation-direction: reverse;
         div {
             border: 8px solid transparent;
             position: absolute;

@@ -23,6 +23,12 @@
         @media screen and (min-width: 992px) {
             width: 30%;
         }
+        &:hover {
+            background-color: #f1dafb;
+        }
+        &:hover i {
+            color: map-get($color, primary);
+        }
         p {
             padding-left: 30px;
             font-size: 13px;
@@ -166,7 +172,6 @@
             -webkit-background-clip: text;
             opacity: 0;
             cursor: pointer;
-            transform-origin: center bottom;
             &:hover {
                 opacity: 1;
                 animation: heart 4s linear forwards;
