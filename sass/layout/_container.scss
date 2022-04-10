@@ -19,6 +19,7 @@
         border: none;
         border-radius: 20px;
         position: relative;
+        cursor: pointer;
         @include default-box-shadow;
         @media screen and (min-width: 992px) {
             width: 30%;
@@ -56,8 +57,9 @@
 .restaurants {
     background-color: map-get($color, min-default);
     padding: map-get($padding, thirt);
+    padding-bottom: 40px;
     @media screen and (min-width: 992px) {
-        padding: 0 40px;
+        padding-bottom: 40px;
         @include for-queries;
         &__title {
             width: 100%;
