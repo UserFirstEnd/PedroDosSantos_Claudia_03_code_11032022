@@ -156,7 +156,8 @@
         i {
             position: absolute;
             right: 25px;
-            font-size: 25px;
+            font-size: 22px;
+            top: 35px;
         }
         .fas {
             color: transparent;
@@ -165,6 +166,7 @@
             -webkit-background-clip: text;
             opacity: 0;
             cursor: pointer;
+            transform-origin: center bottom;
             &:hover {
                 opacity: 1;
                 animation: heart 4s linear forwards;

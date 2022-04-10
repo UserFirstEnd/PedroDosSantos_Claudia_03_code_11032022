@@ -27,7 +27,7 @@ label {
     &:after {
         content: '';
         border-bottom:  solid 3px map-get($color, tertiary);
-        width: 40px;
+        width: 35px;
         height: 5px;
         bottom: -5px;
         left: 0;
