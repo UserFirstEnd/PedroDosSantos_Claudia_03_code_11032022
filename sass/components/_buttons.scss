@@ -20,7 +20,3 @@
         box-shadow: 3px 3px 3px 3px map-get($color, medium-default);
     }
 }
-
-.button-flex {
-    @extend %flex-justify-center;
-}

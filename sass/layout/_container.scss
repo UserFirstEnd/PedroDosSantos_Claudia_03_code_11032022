@@ -191,4 +191,7 @@
         animation-name: dish;
         animation-duration: 1.5s;
     }
+    .button-flex {
+        @extend %flex-justify-center;
+    }
 }
