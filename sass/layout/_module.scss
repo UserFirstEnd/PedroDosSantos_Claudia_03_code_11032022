@@ -25,6 +25,7 @@
             box-sizing: border-box;
             animation: spin 4s linear forwards;
             animation-direction: reverse;
+            z-index: 1;
        }
         div:nth-child(2) {
             border: 10px solid transparent;

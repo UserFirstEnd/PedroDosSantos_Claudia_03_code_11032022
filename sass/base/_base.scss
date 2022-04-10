@@ -24,6 +24,7 @@ label {
     text-transform: uppercase;
     position: relative;
     font-size: 14px;
+    margin-left: 5px;
     &:after {
         content: '';
         border-bottom:  solid 3px map-get($color, tertiary);
