@@ -7,3 +7,9 @@
 @mixin default-box-shadow {
     box-shadow: 3px 3px 3px 3px map-get($color, max-default);
 }
+
+@mixin over-dish {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
