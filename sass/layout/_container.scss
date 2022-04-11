@@ -83,6 +83,9 @@
     {
         width: 48%;
     }
+    &:hover {
+        transform: scale(1.05);
+    }
     &__badge {
         position: absolute;
         right: 11px;
@@ -129,7 +132,7 @@
             -webkit-background-clip: text;
             opacity: 0;
             cursor: pointer;
-            &:hover {
+            &:active {
                 opacity: 1;
                 animation: heart 4s linear forwards;
             } 
@@ -176,10 +179,10 @@
             -webkit-background-clip: text;
             opacity: 0;
             cursor: pointer;
-            &:hover {
+            &:active {
                 opacity: 1;
                 animation: heart 30s linear forwards;
-            } 
+            }
         }
     }
     &__choice {
