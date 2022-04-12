@@ -11,29 +11,19 @@
 @keyframes spin {
   0% {
     transform: rotate(0deg); 
-    border-width: 8px;
+    border-width: 2px;
+  }
+  25% {
+    transform: rotate(90deg); 
+    border-width: 4px;
   }
   50% {
     transform: rotate(180deg); 
-    border-width: 2px;
-    opacity: 1;
+    border-width: 6px;
   }
-  100% {
-    transform: rotate(360deg); 
-    border-width: 8px;
-    opacity: 0;
-  }
-}
-
-@keyframes spin-2 {
-  0% {
-    transform: rotate(0deg); 
-    border-width: 2px;
-  }
-  50% {
-    transform: rotate(180deg); 
-    border-width: 10px;
-    opacity: 1;
+  75% {
+    transform: rotate(240deg); 
+    border-width: 4px;
   }
   100% {
     transform: rotate(360deg); 
