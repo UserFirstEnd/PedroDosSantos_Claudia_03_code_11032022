@@ -39,7 +39,7 @@ label {
         /*Mixin - because accepted with media queries*/
         @include for-queries;
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 992px) {
         .button-flex {
             width: 100%;
         }
@@ -69,7 +69,7 @@ label {
             cursor: pointer;
             &:active {
                 opacity: 1;
-                animation: heart 30s linear forwards;
+                animation: heart 20s linear;
             }
         }
     }
