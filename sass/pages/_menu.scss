@@ -39,6 +39,11 @@ label {
         /*Mixin - because accepted with media queries*/
         @include for-queries;
     }
+    @media screen and (min-width: 1440px) {
+        .button-flex {
+            width: 100%;
+        }
+    }
     &__title {
         font-family: "Shrikhand", sans-serif;
         font-weight: 500;
