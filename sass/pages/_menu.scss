@@ -1,3 +1,6 @@
+/*Menu pages*/
+
+/*Menu container*/
 .dish {
     &__img {
         width: 100%;
@@ -6,7 +9,24 @@
     }
 }
 
+/*Label*/
+label {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 14px;
+    margin-left: 5px;
+    &:after {
+        content: '';
+        border-bottom:  solid 3px map-get($color, tertiary);
+        width: 35px;
+        height: 5px;
+        bottom: -5px;
+        left: 0;
+        position: absolute;
+    }
+}
 
+/*Starters, main dishes and desserts*/
 .composition {
     background-color: map-get($color, min-default);
     border-top-left-radius: 30px;
@@ -14,7 +34,9 @@
     padding: 20px;
     margin-top: -50px;
     position: relative;
+    /*Responsive - Laptop*/
     @media screen and (min-width: 992px) {
+        /*Mixin - because accepted with media queries*/
         @include for-queries;
     }
     &__title {
@@ -22,6 +44,7 @@
         font-weight: 500;
         margin-top: 10px;
         margin-left: 5px;
+        /*Responsive - Laptop*/
         @media screen and (min-width: 992px) {
             width: 100%;
         }
@@ -31,6 +54,7 @@
             font-size: 22px;
             top: 35px;
         }
+        /*Animation - Filling of the heart when we click*/
         .fas {
             color: transparent;
             background-image: linear-gradient(180deg, map-get($color, secondary) 0%, map-get($color, primary) 90%);
@@ -46,10 +70,12 @@
     }
     &__choice {
         margin-bottom: 40px;
+        /*Responsive - Laptop*/
         @media screen and (min-width: 992px) {
             width: 32%;
         }
     }
+    /*Animation - Gradual appearance of dishes and time lag*/
     ul:nth-child(2) {
         animation-name: dish;
         animation-duration: 0.5s;
@@ -67,22 +93,7 @@
     }
 }
 
-label {
-    text-transform: uppercase;
-    position: relative;
-    font-size: 14px;
-    margin-left: 5px;
-    &:after {
-        content: '';
-        border-bottom:  solid 3px map-get($color, tertiary);
-        width: 35px;
-        height: 5px;
-        bottom: -5px;
-        left: 0;
-        position: absolute;
-    }
-}
-
+/*Menu choices*/
 .dish-choice {
     width: 100%;
     border: none;
@@ -93,8 +104,10 @@ label {
     margin-top: 15px;
     box-shadow: 0 3px map-get($color, default);
     cursor: pointer;
+    /*Linked to animation - Validate choice by clicking, with a check icon*/
     overflow: hidden;
     &__text {
+        /*If the dish title is too long, we use ellipsis*/
         @include over-dish;
     }
     &__price {
@@ -102,6 +115,7 @@ label {
         justify-content: space-between;
         width: 100%;
         padding: map-get($padding, first);
+        /*If the dish title is too long, we use ellipsis*/
         @include over-dish;
     }
     &__title {
@@ -109,6 +123,7 @@ label {
         margin-bottom: map-get($margin, second);
         font-size: 16px;
         font-weight: 600;
+        /*If the dish title is too long, we use ellipsis*/
         @include over-dish;
     }
     p {
@@ -130,13 +145,15 @@ label {
             background-color: white;
         }
     }
-    &:hover {
+    /*Animation - Validate choice by clicking, with a check icon*/
+    &:active {
         .dish-choice__check {
             margin-right: 0;
         }
         i {                  
             animation: check 1s linear forwards;
         }
+        /*If the dish title is too long, we use ellipsis*/
         &__text {
              visibility: hidden;
         }

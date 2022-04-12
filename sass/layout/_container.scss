@@ -1,9 +1,13 @@
+/*Cards container*/
+
 .restaurants {
     background-color: map-get($color, min-default);
     padding: map-get($padding, thirt);
     padding-bottom: 40px;
+    /*Responsive - Laptop*/
     @media screen and (min-width: 992px) {
         padding-bottom: 40px;
+        /*Mixin - because accepted with media queries*/
         @include for-queries;
         &__title {
             width: 100%;
@@ -13,7 +17,8 @@
         font-size: 18px;
     }
 }
- 
+
+/*Cards*/
 .cards {
     position: relative;
     background-color: white;
@@ -21,14 +26,18 @@
     margin-bottom: 18px;
     border-radius: 15px;
     cursor: pointer;
+    /*Mixin - because accepted with media queries*/
     @include default-box-shadow;
+    /*Responsive - Laptop*/
     @media screen and (min-width: 992px) 
     {
         width: 48%;
     }
+    /*Animation - Scale when hovering*/
     &:hover {
         transform: scale(1.05);
     }
+    /*Badge*/
     &__badge {
         position: absolute;
         right: 11px;
@@ -43,6 +52,7 @@
         font-weight: bold;
         color: darken(map-get($color, tertiary), 38);
     } 
+    /*img*/
     &__img {
         object-fit: cover;
         background-position: center;
@@ -51,6 +61,7 @@
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
+    /*Description*/
     &__description p,
     h4 {
         font-size: 15px;
@@ -62,12 +73,14 @@
         justify-content: space-between;
         padding: map-get($padding, first);
         position: relative;
+        /*Icons*/
         i {
             position: absolute;
             right: 25px;
             top: 15px;
             font-size: 22px;
         }
+        /*Filling of the heart when we click*/
         .fas {
             color: transparent;
             background-image: linear-gradient(180deg, map-get($color, secondary) 0%, map-get($color, primary) 90%);

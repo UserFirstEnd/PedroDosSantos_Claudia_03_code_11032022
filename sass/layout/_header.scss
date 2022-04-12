@@ -1,3 +1,5 @@
+/*Header - All pages. Icon only for menu pages*/
+
 .header {
     display: flex;
     align-items: center;
@@ -6,6 +8,7 @@
     &__logo {
         width: 135px;
     }
+    /*Menu page icon*/
     .fas {
         position: absolute;
         left: 20px;

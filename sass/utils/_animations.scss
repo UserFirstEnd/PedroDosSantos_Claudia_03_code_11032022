@@ -1,14 +1,4 @@
-@keyframes dish {
-  0% {
-    transform: translateY(-10%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
+/*Loader animations - Homepage*/
 @keyframes loader {
   0% {
     z-index: 9999;
@@ -52,6 +42,7 @@
   }
 }
 
+/*Animation - Filling of the heart when we click - Homepage and Menu pages*/
 @keyframes heart {
   from {
     height: 0%;
@@ -73,6 +64,19 @@
   }
 }
 
+/*Animation - Gradual appearance of dishes and time lag - Menu pages*/
+@keyframes dish {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*Animation - Validate choice by clicking, with a check icon - Menu pages*/
 @keyframes check {
   0% {
     transform: rotate(90deg); 
