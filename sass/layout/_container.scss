@@ -64,9 +64,9 @@
     /*Description*/
     &__description p,
     h4 {
-        font-size: 15px;
-        margin: map-get($margin, first);
-        margin-bottom: map-get($margin, second);
+        font-size: map-get($sizes, small);
+        margin: map-get($margin, 0);
+        margin-bottom: map-get($margin, 5);
     }
     &__flex {
         display: flex;

@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: map-get($margin, first);
+    margin: map-get($margin, 0);
 }
 
 input {

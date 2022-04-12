@@ -119,8 +119,8 @@ label {
         @include over-dish;
     }
     &__title {
-        margin: map-get($margin, first);
-        margin-bottom: map-get($margin, second);
+        margin: map-get($margin, 0);
+        margin-bottom: map-get($margin, 5);
         font-size: 16px;
         font-weight: 600;
         /*If the dish title is too long, we use ellipsis*/
@@ -128,7 +128,7 @@ label {
     }
     p {
         align-self: flex-end;
-        margin: map-get($margin, first);
+        margin: map-get($margin, 0);
         margin-right: 10px;
         font-size: 14px;
     }

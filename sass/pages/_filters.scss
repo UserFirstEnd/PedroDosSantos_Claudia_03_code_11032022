@@ -1,18 +1,18 @@
 .filter {
     background-color: map-get($color, min-default);
-    margin-bottom: map-get($margin, bottom-second);
+    margin-bottom: map-get($margin, 40);
     &__localisation {
         @extend %center;
         background-color: map-get($color, default);
         padding: map-get($padding, first);
         box-shadow: inset 0 5px 5px -5px;
     }
-    /*Search bar*/
+    /*Search ba*/
     &__search {
         background-color: map-get($color, default);
         outline: none;
         border: none;
-        font-size: 13px;
+        font-size: map-get($sizes, x-small);
         width: 125px;
         padding: 10px;
     }
@@ -28,7 +28,7 @@
             font-size: 19px;
         }
         p {
-            font-size: 15px;
+            font-size: map-get($sizes, small);
             color: rgb(105, 104, 104);
         }
     }

@@ -19,7 +19,7 @@ To be developed during phase two of the project*/
         @extend %center;
         background-color: map-get($color, min-default);
         padding: 8px;
-        margin-bottom: map-get($margin, bottom-first);
+        margin-bottom: map-get($margin, 25);
         border: none;
         border-radius: 20px;
         position: relative;
@@ -39,7 +39,7 @@ To be developed during phase two of the project*/
         }
         p {
             padding-left: 30px;
-            font-size: 13px;
+            font-size: map-get($sizes, x-small);
             font-weight: bold;
         }
         i {

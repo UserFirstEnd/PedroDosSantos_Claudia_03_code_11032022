@@ -6,7 +6,7 @@
     border-radius: 30px;
     padding: map-get($padding, second);
     color: white;
-    font-size: 13px;
+    font-size: map-get($sizes, x-small);
     width: 180px;
     cursor: pointer;
     @include default-box-shadow;

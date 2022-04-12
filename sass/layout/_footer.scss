@@ -3,7 +3,7 @@
 footer {
     padding: map-get($padding, thirt);
     background-color: rgb(49, 49, 49);
-    font-size: 13px;
+    font-size: map-get($sizes, x-small);
     a {
         color: white;
         margin-bottom: 5px;
