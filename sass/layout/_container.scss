@@ -26,7 +26,6 @@
     margin-bottom: 18px;
     border-radius: 15px;
     cursor: pointer;
-    transition: transform 280ms ease-in-out;
     /*Mixin - because accepted with media queries*/
     @include default-box-shadow;
     /*Responsive - Laptop*/
@@ -37,6 +36,7 @@
     /*Animation - Scale when hovering*/
     &:hover {
         transform: scale(1.02);
+        transition: transform 280ms ease-in-out;
     }
     /*Badge*/
     &__badge {
