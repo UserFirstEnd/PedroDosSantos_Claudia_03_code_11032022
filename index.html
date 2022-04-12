@@ -15,6 +15,9 @@
 </head>
 
 <body>
+
+    <!--Loader-->
+
     <div class="loader">
         <div class="loader__one">
             <div></div>
@@ -25,11 +28,16 @@
             <div></div>
         </div>
     </div>
+
+    <!--Header with logo-->
+
     <header class="header">
-        <a>
+        <a href="index.html">
             <img class="header__logo" src="public/images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood" />
         </a>
     </header>
+
+    <!--Filters-->
 
     <main>
         <nav class="filter">
@@ -37,15 +45,24 @@
                 <i class="fas fa-map-marker-alt"></i>
                 <input class="filter__search" type="search" name="search" id="search" placeholder="Paris, Belleville" />
             </form>
+
+            <!--Localisation choice-->
+
             <div class="filter__submit">
+
+                <!--Presentation of the company-->
+
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.
                 </p>
-                <button class="button button--top" type="submit">Explorez nos restaurants</button>
+                <button class="button button--top">Explorez nos restaurants</button>
             </div>
         </nav>
 
         <section>
+
+            <!--Allow the composition of the menus and and online booking- 
+                To be developed during phase two of the project-->
 
             <ol class="fonction">
 
@@ -72,6 +89,10 @@
             </ol>
         </section>
 
+        <!--Cards for the four menus and links to the menu pages-->
+        
+        <!--Card - La pallete du gôut-->
+
         <article class="restaurants">
             <h3 class="restaurants__title">Restaurants</h3>
             <article class="cards">
@@ -84,11 +105,16 @@
                             <h4>La palette du goût</h4>
                             <p>Ménilmontant</p>
                         </div>
+                        
+                        <!--Heart animation-->
+
                         <i class="far fa-heart"></i>
                         <i class="fas fa-heart"></i>
                     </div>
                 </a>
             </article>
+
+            <!--Card - La note enchantée-->
 
             <article class="cards">
                 <a href="La-note-enchantée.html">
@@ -100,11 +126,16 @@
                             <h4>La note enchantée</h4>
                             <p>Charonne</p>
                         </div>
+
+                        <!--Heart animation-->
+
                         <i class="far fa-heart"></i>
                         <i class="fas fa-heart"></i>
                     </div>
                 </a>
             </article>
+
+            <!--Card - À la française-->
 
             <article class="cards">
                 <a href="À-la-française.html">
@@ -116,12 +147,16 @@
                             <p>Cité Rouge</p>
                         </div>
                         <div>
+                            <!--Heart animation-->
+
                             <i class="far fa-heart"></i>
                             <i class="fas fa-heart"></i>
                         </div>
                     </div>
                 </a>
             </article>
+
+            <!--Card - La délice des sens-->
 
             <article class="cards">
                 <a href="La-délice-des-sens.html">
@@ -134,6 +169,8 @@
                             <p>Folie-Méricourt</p>
                         </div>
                         <div>
+                            <!--Heart animation-->
+
                             <i class="far fa-heart"></i>
                             <i class="fas fa-heart"></i>
                         </div>
@@ -143,12 +180,20 @@
 
         </article>
 
+        <!--Footer-->
+
         <footer class="footer">
-            <p><a href="#"><img src="public/images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood"
+
+            <!--Back to homepage-->
+
+            <p><a href="index.html"><img src="public/images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood"
                         title="Logo de ohmyfood" /></a></p>
             <p><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></p>
             <p><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></p>
             <p><a href="#">Mentions légales</a>
+
+            <!--Send to e-mail address-->
+
             <p><a href="mailto:contact@ohmyfood.com?subject=Contact ohmyfood">Contact</a></p>
         </footer>
 
