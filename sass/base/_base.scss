@@ -18,19 +18,3 @@ a {
 ol, ul {
     padding: 0;
 }
-
-label {
-    text-transform: uppercase;
-    position: relative;
-    font-size: 14px;
-    margin-left: 5px;
-    &:after {
-        content: '';
-        border-bottom:  solid 3px map-get($color, tertiary);
-        width: 35px;
-        height: 5px;
-        bottom: -5px;
-        left: 0;
-        position: absolute;
-    }
-}
