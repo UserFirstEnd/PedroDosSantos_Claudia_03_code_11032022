@@ -33,6 +33,8 @@ To be developed during phase two of the project*/
         /*Hover with color change*/
         &:hover {
             background-color: #f1dafb;
+            transform: scale(1.02);
+            transition: transform 280ms ease-in-out;
         }
         &:hover i {
             color: map-get($color, primary);
