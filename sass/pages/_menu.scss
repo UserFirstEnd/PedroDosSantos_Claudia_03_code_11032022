@@ -139,7 +139,7 @@ label {
     }
     &__check {
         @extend %flex-center-center;
-        transition: all 1s ease-in-out;
+        transition: all 0.5s ease-in-out;
         width: 60px;
         background-color: map-get($color, tertiary);
         margin-right: -60px;
@@ -156,7 +156,7 @@ label {
             margin-right: 0;
         }
         i {                  
-            animation: check 1s linear forwards;
+            animation: check 0.5s linear forwards;
         }
         /*If the dish title is too long, we use ellipsis*/
         &__text {
