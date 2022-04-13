@@ -6,7 +6,7 @@ To be developed during phase two of the project*/
     /*Responsive - Laptop*/
     @media screen and (min-width: 992px) {
         padding: 0 40px;
-        /*Mixin - because accepted with media queries*/
+        /*Mixin - accepted with media queries*/
         @include for-queries;
         &__title {
             width: 100%;

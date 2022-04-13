@@ -9,23 +9,6 @@
     }
 }
 
-/*Label*/
-label {
-    text-transform: uppercase;
-    position: relative;
-    font-size: 14px;
-    margin-left: 5px;
-    &:after {
-        content: '';
-        border-bottom:  solid 3px map-get($color, tertiary);
-        width: 35px;
-        height: 5px;
-        bottom: -5px;
-        left: 0;
-        position: absolute;
-    }
-}
-
 /*Starters, main dishes and desserts*/
 .composition {
     background-color: map-get($color, min-default);
@@ -36,7 +19,7 @@ label {
     position: relative;
     /*Responsive - Laptop*/
     @media screen and (min-width: 992px) {
-        /*Mixin - because accepted with media queries*/
+        /*Mixin - accepted with media queries*/
         @include for-queries;
     }
     @media screen and (min-width: 992px) {
@@ -44,9 +27,26 @@ label {
             width: 100%;
         }
     }
+    h2 {
+        text-transform: uppercase;
+        position: relative;
+        font-size: 14px;
+        margin-left: 5px;
+        font-weight: 400;
+        &:after {
+            content: '';
+            border-bottom:  solid 3px map-get($color, tertiary);
+            width: 35px;
+            height: 5px;
+            bottom: -5px;
+            left: 0;
+            position: absolute;
+        }
+    }
     &__title {
         font-family: "Shrikhand", sans-serif;
         font-weight: 500;
+        font-size: 27px;
         margin-top: 10px;
         margin-left: 5px;
         /*Responsive - Laptop*/
@@ -127,7 +127,7 @@ label {
         margin: map-get($margin, 0);
         margin-bottom: map-get($margin, 5);
         font-size: 16px;
-        font-weight: 600;
+        font-weight:bold;
         /*If the dish title is too long, we use ellipsis*/
         @include over-dish;
     }
@@ -157,10 +157,6 @@ label {
         }
         i {                  
             animation: check 0.5s linear forwards;
-        }
-        /*If the dish title is too long, we use ellipsis*/
-        &__text {
-             visibility: hidden;
         }
     }
 }

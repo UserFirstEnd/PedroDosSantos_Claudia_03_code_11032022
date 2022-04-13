@@ -1,11 +1,11 @@
-/*Responsive - Mixin - because accepted with media queries*/
+/*Responsive - Mixin - accepted with media queries*/
 @mixin for-queries {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-/*Shadow default - Mixin - because accepted with media queries*/
+/*Shadow default - Mixin - accepted with media queries*/
 @mixin default-box-shadow {
     box-shadow: 3px 3px 3px 3px map-get($color, max-default);
 }

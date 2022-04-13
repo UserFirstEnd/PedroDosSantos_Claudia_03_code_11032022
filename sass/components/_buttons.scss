@@ -10,8 +10,6 @@
     width: 180px;
     cursor: pointer;
     @include default-box-shadow;
-
-
     /*Button from homepage*/
     &--margin {
         margin-bottom: 30px;
@@ -21,7 +19,6 @@
     &--margin-bottom {
         margin-bottom: 55px;
     }
-
     /*Color change and shadow on hover*/
     &:hover {
         background: linear-gradient(180deg, map-get($color, secondary) 40%, map-get($color, primary) 90%);

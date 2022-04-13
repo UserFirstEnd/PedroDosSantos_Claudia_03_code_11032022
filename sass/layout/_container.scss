@@ -26,7 +26,7 @@
     margin-bottom: 18px;
     border-radius: 15px;
     cursor: pointer;
-    /*Mixin - because accepted with media queries*/
+    /*Mixin - accepted with media queries*/
     @include default-box-shadow;
     /*Responsive - Laptop*/
     @media screen and (min-width: 992px) 
@@ -86,7 +86,6 @@
             color: transparent;
             background-image: linear-gradient(180deg, map-get($color, secondary) 0%, map-get($color, primary) 90%);
             background-clip: text;
-            -webkit-background-clip: text;
             opacity: 0;
             cursor: pointer;
             &:active {
