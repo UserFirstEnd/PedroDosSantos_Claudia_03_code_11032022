@@ -101,7 +101,7 @@
             -webkit-background-clip: text;
             opacity: 0;
             cursor: pointer;
-            &:active {
+            &:hover {
                 opacity: 1;
                 animation: heart 20s linear;
             }
