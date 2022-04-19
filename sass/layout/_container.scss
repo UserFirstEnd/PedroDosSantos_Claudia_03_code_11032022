@@ -82,7 +82,7 @@
             top: 15px;
             font-size: 22px;
         }
-        /*Filling of the heart when we click*/
+        /*Animation - Filling of the heart when we hovering*/
         .fas {
             color: transparent;
             background-image: linear-gradient(180deg, map-get($color, secondary) 0%, map-get($color, primary) 90%);
