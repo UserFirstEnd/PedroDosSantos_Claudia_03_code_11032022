@@ -92,8 +92,7 @@
             cursor: pointer;
             &:hover {
                 opacity: 1;
-                -webkit-animation: heart 4s linear forwards;
-                        animation: heart 4s linear forwards;
+                animation: heart 4s linear forwards;
             } 
         }
     }

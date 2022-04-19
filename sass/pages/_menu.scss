@@ -87,6 +87,9 @@
         @media screen and (min-width: 992px) {
             width: 100%;
         }
+        @media screen and (max-width: 320px) {
+            font-size: 25px;
+        }
         i {
             position: absolute;
             right: 25px;
