@@ -52,7 +52,7 @@ To be developed during phase two of the project*/
             font-weight: bold;
         }
         i {
-            font-size: 16px;
+            font-size: 15px;
             color: map-get($color, medium-default);
         }
         /*Numbering*/
@@ -67,6 +67,10 @@ To be developed during phase two of the project*/
             border-radius: 50%;
             width: 20px;
             height: 20px;
+        }
+        .fa-mobile-alt {
+            margin-left: 15px;
+            font-size: 17px;
         }
     }
 }
